@@ -1,0 +1,14 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+.npm/
+
+# Config
+.config/
+.replit
+
+# Backup/Zip
+*.zip
