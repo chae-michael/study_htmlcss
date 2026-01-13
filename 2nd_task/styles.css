@@ -1,0 +1,97 @@
+.red {
+  color: red;
+  background-color: yellow;
+  text-align: center;
+}
+
+.border-blue {
+  border: 10px solid blue;
+}
+
+.border-green {
+  border: 10px solid green;
+}
+
+.Box {
+  width: 200px;
+  height: auto;
+  padding: 50px;
+  border: 50px solid red;
+}
+
+.Box-green {
+  width: 200px;
+  height: auto;
+  padding: 50px;
+  border: 50px solid green;
+}
+
+.Box-blue {
+  width: 200px;
+  height: auto;
+  padding: 50px;
+  border: 50px solid blue;
+}
+
+.Box-red {
+  background-color: white;
+  color: black;
+}
+
+.h1 {
+  color: #9b59b6;
+}
+
+.sub-header {
+  color: #2980b9;
+}
+
+.p {
+  font-size: 16px;
+  font-style: italic;
+  font-family: Verdana;
+}
+
+.p::first-letter {
+  font-size: 200%;
+  color: #2980b9;
+  font-weight: bold;
+}
+
+.h1::before {
+  content: "Read this: ";
+}
+
+.my-box {
+  background: linear-gradient(45deg, #92baac 45px, transparent 45px) 64px 64px,
+    linear-gradient(
+      45deg,
+      #92baac 45px,
+      transparent 45px,
+      transparent 91px,
+      #e1ebbd 91px,
+      #e1ebbd 135px,
+      transparent 135px
+    ),
+    linear-gradient(
+      -45deg,
+      #92baac 23px,
+      transparent 23px,
+      transparent 68px,
+      #92baac 68px,
+      #92baac 113px,
+      transparent 113px,
+      transparent 158px,
+      #92baac 158px
+    );
+  background-color: #e1ebbd;
+  background-size: 128px 128px;
+}
+
+h1:first-child {
+  text-align: center;
+}
+
+.challenge2.my-box {
+  padding: 10%;  
+}
