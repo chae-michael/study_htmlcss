@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.box1 {
+  width: 1000px;
+  height: 400px;
+  background-color: gray;
+  color: white;
+  padding: 5px;
+  position: relative;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 800px;  /* div1 왼쪽에 붙임 */
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(0%);  /* div1 위로 올림 */
+}
