@@ -3,14 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4th_Task</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Fourth Task - Layout Projects</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .subtitle {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .project-card {
+        background: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+      }
+
+      .project-number {
+        font-size: 2rem;
+        font-weight: bold;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 0.5rem;
+      }
+
+      .project-title {
+        font-size: 1.3rem;
+        color: #333;
+        margin-bottom: 0.3rem;
+        font-weight: 600;
+      }
+
+      .project-description {
+        color: #666;
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+
+      .back-button {
+        display: inline-block;
+        margin-bottom: 2rem;
+        padding: 0.8rem 1.5rem;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+      }
+
+      .back-button:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+        }
+        .projects-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
 </head>
-<body class="body">
-    <div class="left-box box"></div>
-    <div class="right-container">
-      <div class="box"></div>
-      <div class="box"></div>
+<body>
+    <div class="container">
+      <a href="../index.html" class="back-button">← 메인으로 돌아가기</a>
+      
+      <h1>🎨 Fourth Task - Layout Projects</h1>
+      <p class="subtitle">레이아웃 프로젝트를 선택해주세요</p>
+
+      <div class="projects-grid">
+        <a href="index1.html" class="project-card">
+          <div class="project-number">4-1</div>
+          <div class="project-title">Layout 1</div>
+          <div class="project-description">첫 번째 레이아웃</div>
+        </a>
+
+        <a href="index2.html" class="project-card">
+          <div class="project-number">4-2</div>
+          <div class="project-title">Layout 2</div>
+          <div class="project-description">두 번째 레이아웃</div>
+        </a>
+
+        <a href="index3.html" class="project-card">
+          <div class="project-number">4-3</div>
+          <div class="project-title">Layout 3</div>
+          <div class="project-description">세 번째 레이아웃</div>
+        </a>
+
+        <a href="index4.html" class="project-card">
+          <div class="project-number">4-4</div>
+          <div class="project-title">Layout 4</div>
+          <div class="project-description">네 번째 레이아웃</div>
+        </a>
+      </div>
     </div>
 </body>
 </html>
